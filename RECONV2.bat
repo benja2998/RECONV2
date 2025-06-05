@@ -35,6 +35,11 @@ echo  myip  - Lists your Public and Private Ip Address
 echo clear  - Clear console
 echo  exit  - Exits console
 goto con
+) else if /I "%c%" EQU "clear" (
+    cls
+    goto con
+) else if /I "%c%" EQU "exit" (
+    exit
 )
                                                                               
                                                                               
